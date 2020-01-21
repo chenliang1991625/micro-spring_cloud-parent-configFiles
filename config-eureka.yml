@@ -14,7 +14,7 @@ spring:
     name: config-eureka
 eureka:
   instance:
-    hosthome: localhost
+    hosthome: eureka2001.com
   client.register-with-eureka: false
   client.fetch-registry: false
   client:
