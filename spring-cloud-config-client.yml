@@ -2,17 +2,19 @@
 server:
   port: 1011
 spring:
+  label: master
   profiles: dev
   application:
      name: spring-cloud-config-client
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:1000/eureka/
+      defaultZone: http://localhost:1000/eureka/,http://localhost:1001/eureka/,http://localhost:2001/eureka/
 ---
 server:
   port: 1012
 spring:
+  label: master
   profiles: test
   application:
     name: spring-cloud-config-client

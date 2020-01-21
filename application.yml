@@ -1,6 +1,7 @@
 ﻿#正在启动的环境
 spring:
   profiles:
+  label: master
     active:
       - test
 
@@ -8,6 +9,7 @@ spring:
 #开发环境配置
 spring:
   profiles: dev
+  label: master
   application:
     name: config-dev
 
@@ -15,6 +17,7 @@ spring:
 #测试环境配置
 spring:
   profiles:
+  label: master
   application:
     name: config-test
 #请保存为UTF-8编码格式

@@ -1,5 +1,6 @@
 ﻿#激活的服务模块.romote use
 spring:
+  label: master
   profiles:
     active:
       - dev
@@ -28,4 +29,4 @@ mybatis:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:2001/eureka/
+      defaultZone: http://localhost:1000/eureka/,http://localhost:1001/eureka/,http://localhost:2001/eureka/
