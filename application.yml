@@ -1,0 +1,22 @@
+﻿#正在启动的环境
+spring:
+  profiles:
+    active:
+      - test
+
+---
+#开发环境配置
+spring:
+  profiles: dev
+  application:
+    name: config-dev
+
+---
+#测试环境配置
+spring:
+  profiles:
+  application:
+    name: config-test
+#请保存为UTF-8编码格式
+
+  

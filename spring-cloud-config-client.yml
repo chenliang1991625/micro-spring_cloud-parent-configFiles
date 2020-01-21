@@ -1,0 +1,22 @@
+﻿#spring-cloud-config-client //idea中模块的配置文件
+server:
+  port: 1011
+spring:
+  profiles: dev
+  application:
+     name: spring-cloud-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+---
+server:
+  port: 1012
+spring:
+  profiles: test
+  application:
+    name: spring-cloud-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
