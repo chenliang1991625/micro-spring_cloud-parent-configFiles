@@ -9,7 +9,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:1000/eureka/,http://localhost:1001/eureka/,http://localhost:2001/eureka/
+      defaultZone: http://eureka1000.com:1000/eureka/,http://eureka1001.com:1001/eureka/,http://eureka2001.com:2001/eureka/
 ---
 server:
   port: 1012
@@ -21,4 +21,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:1000/eureka/
+      defaultZone: http://eureka1000.com:1000/eureka/,http://eureka1001.com:1001/eureka/,http://eureka2001.com:2001/eureka/
