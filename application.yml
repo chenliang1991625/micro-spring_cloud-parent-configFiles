@@ -1,7 +1,7 @@
 ﻿#正在启动的环境
 spring:
-  profiles:
   label: master
+  profiles:
     active:
       - dev
 
