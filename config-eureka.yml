@@ -12,7 +12,6 @@ spring:
   profiles: dev
   application:
     name: config-eureka
-
 eureka:
   instance:
     hosthome: localhost
@@ -20,7 +19,7 @@ eureka:
   client.fetch-registry: false
   client:
     service-url:
-      defaultZone: http://localhost:1000/eureka/,http://localhost:1001/eureka/
+      defaultZone: http://localhost:1000/eureka/,http://localhost:1001/eureka/,http://localhost:2001/eureka/
 ---
 
 #服务注册中心200-test测试模块1配置
